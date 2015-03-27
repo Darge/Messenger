@@ -1,0 +1,85 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module server</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>server</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/users/tomek/documents/python/projekt/messenger/server/server.py">c:\users\tomek\documents\python\projekt\messenger\server\server.py</a></font></td></tr></table>
+    <p><tt>Tomasz&nbsp;Flendrich<br>
+nr&nbsp;indeksu&nbsp;264596</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="Pyro4.html">Pyro4</a><br>
+<a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="sqlite3.html">sqlite3</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="thread.html">thread</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="__builtin__.html#object">__builtin__.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="server.html#Server">Server</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Server">class <strong>Server</strong></a>(<a href="__builtin__.html#object">__builtin__.object</a>)</font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Server-add_contact"><strong>add_contact</strong></a>(self, nick, contact_nick)</dt><dd><tt>Adds&nbsp;a&nbsp;contact&nbsp;to&nbsp;one's&nbsp;contact&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="Server-delete_contact"><strong>delete_contact</strong></a>(self, nick, contact_nick)</dt><dd><tt>Deletes&nbsp;a&nbsp;contact&nbsp;from&nbsp;one's&nbsp;contact&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="Server-give_contacts"><strong>give_contacts</strong></a>(self, nick)</dt><dd><tt>Returns&nbsp;the&nbsp;contacts&nbsp;of&nbsp;a&nbsp;certain&nbsp;nick</tt></dd></dl>
+
+<dl><dt><a name="Server-log_in"><strong>log_in</strong></a>(self, nick, password)</dt><dd><tt>When&nbsp;a&nbsp;client&nbsp;sends&nbsp;us&nbsp;a&nbsp;log&nbsp;in&nbsp;request</tt></dd></dl>
+
+<dl><dt><a name="Server-new_data"><strong>new_data</strong></a>(self, sender, receiver, password, message)</dt><dd><tt>Receives&nbsp;a&nbsp;message&nbsp;from&nbsp;the&nbsp;sender&nbsp;to&nbsp;its&nbsp;receiver</tt></dd></dl>
+
+<dl><dt><a name="Server-new_messages_info_request"><strong>new_messages_info_request</strong></a>(self, nick)</dt><dd><tt>When&nbsp;a&nbsp;client&nbsp;wants&nbsp;to&nbsp;know&nbsp;from&nbsp;whom&nbsp;he&nbsp;has&nbsp;pending&nbsp;messages.<br>
+Keep&nbsp;in&nbsp;mind&nbsp;that&nbsp;it&nbsp;doesn't&nbsp;check&nbsp;the&nbsp;password.</tt></dd></dl>
+
+<dl><dt><a name="Server-send_data"><strong>send_data</strong></a>(self, nick, password, senders)</dt><dd><tt>Sends&nbsp;the&nbsp;messages&nbsp;coming&nbsp;from&nbsp;senders&nbsp;(a&nbsp;tuple)&nbsp;to&nbsp;a&nbsp;specific&nbsp;contact</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>cursor</strong> = &lt;sqlite3.Cursor object&gt;<br>
+<strong>daemon</strong> = &lt;Pyro4.core.Daemon at 0x26ee0b8, localhost:50565, 2 objects&gt;<br>
+<strong>database</strong> = &lt;sqlite3.Connection object&gt;<br>
+<strong>ns</strong> = &lt;Pyro4.core.Proxy at 0x26eed68, connected, for PYRO:Pyro.NameServer@localhost:9090&gt;<br>
+<strong>server</strong> = &lt;server.Server object&gt;<br>
+<strong>uri</strong> = &lt;Pyro4.core.URI at 0x26cbe60, PYRO:obj_9c9ed36a081141cfaf37f6bbb1754eda@localhost:50565&gt;</td></tr></table>
+</body></html>

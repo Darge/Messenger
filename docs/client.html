@@ -1,0 +1,95 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module client</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>client</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///C:/users/tomek/documents/python/projekt/messenger/client/client.py">c:\users\tomek\documents\python\projekt\messenger\client\client.py</a></font></td></tr></table>
+    <p><tt>Tomasz&nbsp;Flendrich<br>
+nr&nbsp;indeksu&nbsp;264596</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="Pyro4.html">Pyro4</a><br>
+<a href="Tkinter.html">Tkinter</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="sqlite3.html">sqlite3</a><br>
+</td><td width="25%" valign=top><a href="sys.html">sys</a><br>
+<a href="tkMessageBox.html">tkMessageBox</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="client.html#Application">Application</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Application">class <strong>Application</strong></a></font></td></tr>
+    
+<tr><td bgcolor="#ffc8d8"><tt>&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Application-__init__"><strong>__init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Application-add_contact_button_action"><strong>add_contact_button_action</strong></a>(self, entry, window)</dt></dl>
+
+<dl><dt><a name="Application-add_contact_dialog"><strong>add_contact_dialog</strong></a>(self)</dt><dd><tt>Used&nbsp;when&nbsp;the&nbsp;"Add&nbsp;a&nbsp;contact"&nbsp;button&nbsp;is&nbsp;clicked</tt></dd></dl>
+
+<dl><dt><a name="Application-configure_canvas"><strong>configure_canvas</strong></a>(self, event)</dt></dl>
+
+<dl><dt><a name="Application-configure_canvas_chat"><strong>configure_canvas_chat</strong></a>(self, event, contact_name)</dt></dl>
+
+<dl><dt><a name="Application-contact_click_button_action"><strong>contact_click_button_action</strong></a>(self, contact)</dt><dd><tt>Used&nbsp;when&nbsp;a&nbsp;contact&nbsp;is&nbsp;clicked</tt></dd></dl>
+
+<dl><dt><a name="Application-delete_contact_button_action"><strong>delete_contact_button_action</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="Application-destroy_main_window"><strong>destroy_main_window</strong></a>(self, event)</dt><dd><tt>To&nbsp;close&nbsp;all&nbsp;the&nbsp;chat&nbsp;windows&nbsp;after&nbsp;closing&nbsp;the&nbsp;main&nbsp;window.</tt></dd></dl>
+
+<dl><dt><a name="Application-destroy_window"><strong>destroy_window</strong></a>(self, event, contact_name)</dt><dd><tt>Used&nbsp;when&nbsp;a&nbsp;window&nbsp;is&nbsp;destroyed.</tt></dd></dl>
+
+<dl><dt><a name="Application-display_contacts"><strong>display_contacts</strong></a>(self)</dt><dd><tt>This&nbsp;method&nbsp;displays&nbsp;the&nbsp;contacts&nbsp;on&nbsp;the&nbsp;contact&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="Application-initialize"><strong>initialize</strong></a>(self)</dt><dd><tt>Displays&nbsp;the&nbsp;log-in&nbsp;window</tt></dd></dl>
+
+<dl><dt><a name="Application-log_in"><strong>log_in</strong></a>(self, nick, password)</dt><dd><tt>This&nbsp;method&nbsp;runs&nbsp;after&nbsp;clicking&nbsp;the&nbsp;"log&nbsp;in"&nbsp;button.</tt></dd></dl>
+
+<dl><dt><a name="Application-new_chat_window"><strong>new_chat_window</strong></a>(self, contact_name)</dt><dd><tt>Used&nbsp;when&nbsp;you&nbsp;doubleclick&nbsp;a&nbsp;contact.</tt></dd></dl>
+
+<dl><dt><a name="Application-new_window"><strong>new_window</strong></a>(self)</dt><dd><tt>This&nbsp;method&nbsp;creates&nbsp;the&nbsp;main&nbsp;window</tt></dd></dl>
+
+<dl><dt><a name="Application-position"><strong>position</strong></a>(self, window, position)</dt><dd><tt>Positions&nbsp;a&nbsp;window&nbsp;either&nbsp;in&nbsp;the&nbsp;center&nbsp;of&nbsp;the&nbsp;screen,&nbsp;or&nbsp;in&nbsp;the&nbsp;right&nbsp;part&nbsp;of&nbsp;it</tt></dd></dl>
+
+<dl><dt><a name="Application-repeated_function"><strong>repeated_function</strong></a>(self)</dt><dd><tt>Checks&nbsp;if&nbsp;there&nbsp;are&nbsp;any&nbsp;incoming&nbsp;messages&nbsp;from&nbsp;our&nbsp;contacts.<br>
+Also,&nbsp;receives&nbsp;messages&nbsp;from&nbsp;contacts&nbsp;with&nbsp;whom&nbsp;we&nbsp;have&nbsp;a&nbsp;chat&nbsp;window&nbsp;opened<br>
+and&nbsp;both&nbsp;adds&nbsp;them&nbsp;to&nbsp;the&nbsp;archives&nbsp;and&nbsp;displays&nbsp;them&nbsp;in&nbsp;the&nbsp;chat&nbsp;window</tt></dd></dl>
+
+<dl><dt><a name="Application-send_button_action"><strong>send_button_action</strong></a>(self, contact_name)</dt><dd><tt>This&nbsp;function&nbsp;adds&nbsp;the&nbsp;messages&nbsp;you&nbsp;send&nbsp;to&nbsp;your&nbsp;database,&nbsp;sends&nbsp;them&nbsp;to&nbsp;the&nbsp;server,&nbsp;and&nbsp;displays&nbsp;them&nbsp;in&nbsp;the&nbsp;chat&nbsp;window.</tt></dd></dl>
+
+<dl><dt><a name="Application-set_initial_messages"><strong>set_initial_messages</strong></a>(self, contact_name)</dt><dd><tt>Displays&nbsp;the&nbsp;20&nbsp;last&nbsp;messages&nbsp;from&nbsp;this&nbsp;contact&nbsp;(if&nbsp;they&nbsp;exist)</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-floor"><strong>floor</strong></a>(...)</dt><dd><tt><a href="#-floor">floor</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;floor&nbsp;of&nbsp;x&nbsp;as&nbsp;a&nbsp;float.<br>
+This&nbsp;is&nbsp;the&nbsp;largest&nbsp;integral&nbsp;value&nbsp;&lt;=&nbsp;x.</tt></dd></dl>
+</td></tr></table>
+</body></html>

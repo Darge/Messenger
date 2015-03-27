@@ -1,0 +1,5 @@
+You need Pyro4 to run this package.
+Before you run the server, you have to execute this command in the command prompt:
+python -m Pyro4.naming
+
+Then run server.py and as many clients (client.py) as you want.

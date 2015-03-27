@@ -1,0 +1,6 @@
+The Messenger package is an online messenger written in Python.
+It fullfills the following requirements:
+-stores data using SQLite
+-uses a GUI (written in Tkinter, which was a huge mistake)
+-is multi-threaded (every connection is a single thread)
+-is hopefully useful and good-looking
